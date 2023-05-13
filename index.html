@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuzinho</title>
+    
+    <style>
+        body{
+    background-color: rgba(255, 0, 0, 0.942);
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 50px;
+}
+
+.botao{
+    background: #3D94F6;
+   background-image: -webkit-linear-gradient(top, #3D94F6, #1E62D0);
+   background-image: -moz-linear-gradient(top, #3D94F6, #1E62D0);
+   background-image: -ms-linear-gradient(top, #3D94F6, #1E62D0);
+   background-image: -o-linear-gradient(top, #3D94F6, #1E62D0);
+   background-image: -webkit-gradient(to bottom, #3D94F6, #1E62D0);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   color: #FFFFFF;
+   font-family: Verdana;
+   font-size: 22px;
+   font-weight: 500;
+   padding: 14px;
+   -webkit-box-shadow: 1px 1px 20px 0 #000000;
+   -moz-box-shadow: 1px 1px 20px 0 #000000;
+   box-shadow: 1px 1px 20px 0 #000000;
+   text-shadow: -3px -3px 16px #000000;
+   border: solid #337FED 1px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.botao:hover{
+    
+}
+
+#sim{ 
+    text-decoration:  none;
+}
+
+.container {
+    text-align: center;
+    margin-top: 250px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cuzinho hoje?</h1>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><input class="botao" type="button" id="sim" value="SIM"></a>
+        <input class="botao" id="nao" type="button" value="Não" onclick="clicar()">
+    </div>
+
+    <script>
+        let nao = document.getElementById("nao")
+        function clicar()
+        {
+            posicao = Math.random() * 300
+            posicao1 = Math.random() * 300
+            nao.style.position = 'absolute'
+            nao.style.top = `${posicao}px`
+            nao.style.left = `${posicao1}px`
+           // nao.style.right = `${posicao}px`
+
+        }
+
+    </script>
+    
+</body>
+</html>
